@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+</head>
+<body>
+	<h1>{{ hello }}</h1>
+	<form action="/" method="POST">
+		<input type="text" name="संख्या">
+		<input type="submit" value="Посчитать">
+	</form>
+	<svg viewBox="0 0 1060 170">
+		{% for rect in field %}
+			<rect x="{{ rect[0] }}" y="{{ rect[1] }}" width="10" height="10" fill="{{ rect[2] }}"/>
+		{% endfor %}
+	</svg>
+</body>
+</html>
